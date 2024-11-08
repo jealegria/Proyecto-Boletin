@@ -9,6 +9,7 @@ editor: visual
 #Cargar librerias y datos raw
 source("cargadatosylib.R")
 ```
+hello
 
 ```{r}
 #Limpieza de datos, union de tablas raw, left join con SE
