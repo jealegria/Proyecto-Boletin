@@ -1,0 +1,49 @@
+---
+title: "Boletin Epidemiologia"
+author: "Juan"
+format: revealjs
+editor: visual
+---
+
+```{r}
+#Cargar librerias y datos raw
+source("cargadatosylib.R")
+```
+
+```{r}
+#Limpieza de datos, union de tablas raw, left join con SE
+source("proceso_datos.R")
+
+#Creacion de tabla de cantidad de egresos por tipo y SE
+source("tablasgt1.R")
+
+#Creacion de tabla mensual de ingresos con diferencia en % con el año anterior
+source("guardia_dif_ingresos.R")
+```
+
+
+## Tabla de egresos comparando Adultos y Pediatria
+Grafico numero 1
+```{r}
+#Tabla de egresos comparando Adultos y Pediatria por SE
+tabla_edit
+```
+Grafico numero 2
+```{r}
+#Tabla de ingresos por SE con diferencia %
+tabla_resultado
+```
+
+## grafico
+
+```{r}
+#Tabla de ingresos mensual con diferencia %
+tabla_resultado_mensual
+```
+## hoja3
+Linea de tendencia de ingresos por semana epidemiologica
+```{r}
+#Linea tendencia de ingresos por SE comparando años 
+egresos_tendencia_semanal
+```
+
